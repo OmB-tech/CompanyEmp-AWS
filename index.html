@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TechCorp Employee Portal for company resources, announcements, and workplace information.">
+  <title>TechCorp Employee Portal</title>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#home" aria-label="TechCorp home">
+          <span class="brand-mark">T</span>
+          <span class="brand-text">TechCorp</span>
+        </a>
+
+        <button class="nav-toggle" id="navToggle" type="button" aria-controls="siteNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="site-nav" id="siteNav" aria-label="Primary navigation">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#dashboard">Employees</a></li>
+            <li><a href="#announcements">Announcements</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero section-reveal">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow">Internal access made simple</span>
+            <h1>Employee Portal</h1>
+            <p>
+              Access company resources, review announcements, and stay connected with the latest workplace updates from one secure dashboard.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#dashboard" id="getStartedBtn">Get Started</a>
+              <a class="btn btn-secondary" href="#announcements">View Updates</a>
+            </div>
+          </div>
+
+          <div class="hero-panel glass-card section-reveal">
+            <div class="panel-top">
+              <span class="status-pill"><i class="fa-solid fa-circle-check"></i> All systems operational</span>
+              <span class="panel-date">Today</span>
+            </div>
+            <div class="panel-grid">
+              <article>
+                <strong>HR Support</strong>
+                <p>Mon-Fri, 8:00 AM - 6:00 PM</p>
+              </article>
+              <article>
+                <strong>Latest Notice</strong>
+                <p>Policy refresh available in the dashboard.</p>
+              </article>
+              <article>
+                <strong>Quick Access</strong>
+                <p>Payroll, attendance, and directory tools.</p>
+              </article>
+              <article>
+                <strong>Work Mode</strong>
+                <p>Hybrid teams and office schedules updated weekly.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="dashboard section-reveal" id="dashboard">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Employee dashboard</span>
+            <h2>Everything your team needs in one place</h2>
+          </div>
+
+          <div class="card-grid">
+            <article class="feature-card glass-card section-reveal">
+              <div class="card-icon"><i class="fa-solid fa-file-signature"></i></div>
+              <h3>Leave Requests</h3>
+              <p>Submit time off, track approvals, and review leave balances quickly.</p>
+            </article>
+            <article class="feature-card glass-card section-reveal">
+              <div class="card-icon"><i class="fa-solid fa-book-open"></i></div>
+              <h3>Company Policies</h3>
+              <p>Find the latest guidelines, compliance notes, and internal handbooks.</p>
+            </article>
+            <article class="feature-card glass-card section-reveal">
+              <div class="card-icon"><i class="fa-solid fa-wallet"></i></div>
+              <h3>Payroll</h3>
+              <p>Access pay slips, compensation details, and salary history securely.</p>
+            </article>
+            <article class="feature-card glass-card section-reveal">
+              <div class="card-icon"><i class="fa-solid fa-clock"></i></div>
+              <h3>Attendance</h3>
+              <p>Review attendance records, work hours, and team availability data.</p>
+            </article>
+            <article class="feature-card glass-card section-reveal">
+              <div class="card-icon"><i class="fa-solid fa-calendar-days"></i></div>
+              <h3>Holiday Calendar</h3>
+              <p>See office holidays, planned closures, and key company dates ahead.</p>
+            </article>
+            <article class="feature-card glass-card section-reveal">
+              <div class="card-icon"><i class="fa-solid fa-address-book"></i></div>
+              <h3>Internal Directory</h3>
+              <p>Search employee profiles, departments, and contact details instantly.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="announcements section-reveal" id="announcements">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Latest announcements</span>
+            <h2>Keep up with what is happening across TechCorp</h2>
+          </div>
+
+          <div class="announcement-list">
+            <article class="announcement-item glass-card section-reveal">
+              <time datetime="2026-07-14">July 14, 2026</time>
+              <h3>Q3 performance review cycle now open</h3>
+              <p>Managers can begin submitting review notes and scheduling feedback sessions through the portal.</p>
+            </article>
+            <article class="announcement-item glass-card section-reveal">
+              <time datetime="2026-07-10">July 10, 2026</time>
+              <h3>Updated travel expense policy released</h3>
+              <p>The finance team has published the revised process for reimbursements and approvals.</p>
+            </article>
+            <article class="announcement-item glass-card section-reveal">
+              <time datetime="2026-07-05">July 5, 2026</time>
+              <h3>New office collaboration spaces available</h3>
+              <p>Bookable rooms and quiet zones are now open across all main office locations.</p>
+            </article>
+            <article class="announcement-item glass-card section-reveal">
+              <time datetime="2026-07-01">July 1, 2026</time>
+              <h3>Quarterly all-hands meeting scheduled</h3>
+              <p>Join leadership for company updates, roadmap highlights, and live Q&A next week.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="stats section-reveal" aria-labelledby="stats-heading">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Company statistics</span>
+            <h2 id="stats-heading">A quick snapshot of TechCorp</h2>
+          </div>
+
+          <div class="stats-grid">
+            <article class="stat-card glass-card section-reveal">
+              <span class="stat-value counter" data-target="1840">0</span>
+              <span class="stat-label">Employees</span>
+            </article>
+            <article class="stat-card glass-card section-reveal">
+              <span class="stat-value counter" data-target="12">0</span>
+              <span class="stat-label">Departments</span>
+            </article>
+            <article class="stat-card glass-card section-reveal">
+              <span class="stat-value counter" data-target="98">0</span>
+              <span class="stat-label">Projects</span>
+            </article>
+            <article class="stat-card glass-card section-reveal">
+              <span class="stat-value counter" data-target="7">0</span>
+              <span class="stat-label">Offices</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="events section-reveal" aria-labelledby="events-heading">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Upcoming events</span>
+            <h2 id="events-heading">Timeline of important dates</h2>
+          </div>
+
+          <div class="timeline">
+            <article class="timeline-item glass-card section-reveal">
+              <div class="timeline-marker"></div>
+              <time datetime="2026-07-18">Jul 18</time>
+              <h3>Leadership Town Hall</h3>
+              <p>Company-wide briefing on goals, growth priorities, and upcoming initiatives.</p>
+            </article>
+            <article class="timeline-item glass-card section-reveal">
+              <div class="timeline-marker"></div>
+              <time datetime="2026-07-22">Jul 22</time>
+              <h3>Benefits Q&A Session</h3>
+              <p>HR specialists will answer questions about benefits, leave, and policy updates.</p>
+            </article>
+            <article class="timeline-item glass-card section-reveal">
+              <div class="timeline-marker"></div>
+              <time datetime="2026-07-29">Jul 29</time>
+              <h3>Team Collaboration Workshop</h3>
+              <p>Learn practical ways to improve cross-functional communication and project delivery.</p>
+            </article>
+            <article class="timeline-item glass-card section-reveal">
+              <div class="timeline-marker"></div>
+              <time datetime="2026-08-04">Aug 4</time>
+              <h3>Office Safety Drill</h3>
+              <p>Regional offices will participate in a safety and evacuation readiness exercise.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand footer-brand" href="#home" aria-label="TechCorp home">
+            <span class="brand-mark">T</span>
+            <span class="brand-text">TechCorp</span>
+          </a>
+          <p>Modern employee services, internal communications, and workplace resources.</p>
+        </div>
+
+        <div>
+          <h3>Contact</h3>
+          <p>Email: <a href="mailto:hr@techcorp.com">hr@techcorp.com</a></p>
+          <p>Phone: <a href="tel:+18005550199">+1 (800) 555-0199</a></p>
+        </div>
+
+        <div>
+          <h3>Company</h3>
+          <p>Employee Portal built for fast access to internal services and updates.</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 TechCorp. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <button class="scroll-top" id="scrollTopBtn" type="button" aria-label="Scroll to top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
